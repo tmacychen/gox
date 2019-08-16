@@ -95,7 +95,9 @@ var (
 	Platforms_1_9 = Platforms_1_8
 
 	// no new platforms in 1.10
-	Platforms_1_10 = Platforms_1_9
+	Platforms_1_10 = append(Platforms_1_9,[]Platform{
+        {"linux","sw64",true},
+    }...)
 
 	PlatformsLatest = Platforms_1_10
 )
